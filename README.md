@@ -8,8 +8,8 @@
 
 Given some lenguages as input parameters (specified in text files) and an opcode, the program runs the corresponding operation on the input languages. The result of the operations
 carried out will be stored in an output file. The program receives through the command line all the necessary parameters to be able to
-perform an execution. Taking this into account the execution of the online program
-The commands should be similar to the following:
+perform an execution. Taking this into account the execution of the program
+should be similar to the following:
 
 ```
 ./languages ​​filein1.text filein2.text file output.text opcode

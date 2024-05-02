@@ -12,7 +12,7 @@ perform an execution. Taking this into account the execution of the program
 should be similar to the following:
 
 ```
-./languages ​​filein1.text filein2.text file output.text opcode
+./languages ​​filein1.text filein2.text fileoutput.text opcode
 ```
 
 In the input files we will find the definition of the languages ​​we are using

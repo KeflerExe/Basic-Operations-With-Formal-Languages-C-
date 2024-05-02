@@ -6,18 +6,43 @@
 ## About The Project
 
 
-In different fields of science there is a need to work with very big, or very small  numerical values.
-With this program im implementing data types in C++ to handle 
-very large numeric values, exceeding the representation range of the defined data types
-in standard language. To do this, the generic data type BigInt<size_t Base> is defined
-which represents integers using positional notation. In this numbering system, the value of a digit depends on its relative position and the base, which determines the number of
-digits needed to write any number. By default, the decimal system will be used
-(base 10), although it is also common to use the binary (base 2), octal (base 8) and hexadecimal (base 16).
+Given some lenguages as input parameters (specified in text files) and an opcode, the program runs the corresponding operation on the input languages. The result of the operations
+carried out will be stored in an output file. The program receives through the command line all the necessary parameters to be able to
+perform an execution. Taking this into account the execution of the online program
+The commands should be similar to the following:
 
-The representation range of the BigInt<size_t Base> data type encompasses any integer, positive or negative, that can be stored in machine memory.
-That is, the maximum range is limited by the maximum size that the system allows for the data structure where the digits are stored.
+```
+./languages ​​filein1.text filein2.text file output.text opcode
+```
 
-Using the BigInt<Base> data type, the program implements a calculator for expressions in inverse Polish notation.
+In the input files we will find the definition of the languages ​​we are using
+to perform the corresponding operation. In the output file we will write the languages
+that turned out of the operation that we have indicated to perform, while the code of
+operation tells us precisely the type of operation that will be carried out.
+
+The format of the input files will be similar to the following:
+
+{ a b c } { a abc cab bbcc }
+
+{ a } { a aa aaa }
+
+{ a b } { }
+
+{ 0 1 } { & }
+
+{ 0 1 } { 0 1 00 01 10 11 }
+
+In each line we will find the specification of a language: first the alphabet and then
+the set of strings that make up the language.
+
+There's 6 operations implemented:
+
+1. Concatenation
+2. Union
+3. Intersection
+4. Difference
+5. Reverse
+6. Power
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
